@@ -1,6 +1,13 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9010}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
+
 resilience4j:
   circuitbreaker:
     configs:
@@ -11,27 +18,6 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 8
         slowCallRateThreshold: 58
         slowCallDurationThreshold: 500ms
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-
-      user-service-cb:
-        slidingWindowSize: 12
-        failureRateThreshold: 48
-        waitDurationInOpenState: 10s
-        permittedNumberOfCallsInHalfOpenState: 8
-        slowCallRateThreshold: 58
-        slowCallDurationThreshold: 500ms
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-
     instances:
       mitocode-product: 
         base-config: product-service-cb
-      mitocode-user:
-        base-config: user-service-cb
-
-  timelimiter:
-    configs:
-      product-service-tl:
-        timeoutDuration: 1s
-    instances:
-      mitocode-product-tl:
-        base-config: product-service-tl
