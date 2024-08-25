@@ -10,9 +10,9 @@ spring:
             issuer-uri: http://localhost:8080/realms/mitocode-realm
         registration:
           mitocode-realm:
-            provider: mitocode-realm
-            client-name: mitocode-client
-            client-id: mitocode-client
-            client-secret: iMlaRC2RqLCZGVOuF3bA87rK16yvATeS
+            provider: microservicio-realm
+            client-name: microservicio-client
+            client-id: microservicio-client
+            client-secret: jY2cZ8Aks6PMdYbllO2iEjqxMjbTiOx1
             scope: openid
             authorization-grant-type: authorization_code
