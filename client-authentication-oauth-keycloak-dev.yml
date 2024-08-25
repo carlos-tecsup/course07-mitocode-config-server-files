@@ -6,10 +6,10 @@ spring:
     oauth2:
       client:
         provider:
-          mitocode-realm:
+          microservicio-realm:
             issuer-uri: http://localhost:8080/realms/Microservicio-Realm
         registration:
-          mitocode-realm:
+          microservicio-realm:
             provider: Microservicio-Realm
             client-name: microservicio-client
             client-id: microservicio-client
