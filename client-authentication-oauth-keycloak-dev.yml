@@ -10,7 +10,7 @@ spring:
             issuer-uri: http://localhost:8080/realms/Microservicio-Realm
         registration:
           mitocode-realm:
-            provider: Microservicio-Realm
+            provider: microservicio-realm
             client-name: microservicio-client
             client-id: microservicio-client
             client-secret: jY2cZ8Aks6PMdYbllO2iEjqxMjbTiOx1
