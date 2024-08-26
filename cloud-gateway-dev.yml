@@ -46,3 +46,6 @@ spring:
             #    headerKey: MitocodeKey
             #    headerValue: MitocodeValue
             - UserServiceFilter=MitocodeKey,MitocodeValue
+microservicio:
+  security:
+    key: 7a4dd54a8f70783702831cb6b09cc8006d0c444e776365a50e9c68dd3c31438bf5929970236e251ec4fb092522f4c71c
