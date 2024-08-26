@@ -1,7 +1,7 @@
 server:
   port: 9099
 
-mitocode:
+microservicio:
   security:
     key: 8f2283b253070206dc7466fed24b377f58795bbbbdd05549e483370aee0108b64160be7d3c58c8a612bebb31c25d3c72
 
