@@ -7,7 +7,7 @@ spring:
       client:
         provider:
           microservicio-realm:
-            issuer-uri: http://localhost:8080/realms/Microservicio-Realm
+            issuer-uri: http://localhost:8080/realms/microservicio-realm
         registration:
           microservicio-realm:
             provider: Microservicio-Realm
