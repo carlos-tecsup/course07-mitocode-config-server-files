@@ -48,4 +48,4 @@ spring:
             - UserServiceFilter=MitocodeKey,MitocodeValue
 microservicio:
   security:
-    key: 1146b8dbfea15e18054c338df35ba556749f781970c079480ed1d52a62cef0f046ee15a9a250b79132813eab170dbb607a9ea3807927fee75a655fe52f321ac2
+    key: 995d70f448b9b3ce483fa3d60ddc995a83b2d382aef9c6996acabc4e90d40465539400b642f5c2ee88922f001180d79774f8da994346e9ce84ad5f21b36084df
